@@ -1,4 +1,3 @@
-import java.util.Arrays;
 import java.util.Scanner;
 import java.util.Stack;
 
@@ -14,9 +13,15 @@ public class CodingQs {
 //        int[] arr = {3, 4, 5, 1, 6, 10, 9, 7, 8};
 //        int s = arg.length;
 //        System.out.println(cdQs.isStrictlySmall(arr, s));
-        int[] arr = {1, 2, 6, 6, 4, 5};
-        int s = arr.length;
-        System.out.println(Arrays.toString(cdQs.repeated_MissNum(arr , s)));
+//        int[] arr = {1, 2, 6, 6, 4, 5};
+//        int s = arr.length;
+//        System.out.println(Arrays.toString(cdQs.repeated_MissNum(arr , s)));
+//        System.out.println(cdQs.randomNumGenerator(10, 20));
+//        ptrnRTStr(5);
+//        ptrnLTStr(5);
+//        ptrnPyramidBtmUpStr(10);
+//        ptrnPyramidBtmUpAndUpDownStr(5);
+        downWrdT(3);
     }
 //    1) convertCaseNprintInNewEachWord
     /*public String convertCaseNprintInNewEachWord(String s){
@@ -103,4 +108,65 @@ public class CodingQs {
 
         return repeated_MissNum;
     }
+    public int randomNumGenerator(int min, int max){
+        return (int)(Math.random() * (max - min + 1) + min);
+    }
+    public static void ptrnRTStr(int row){
+        for (int i = 0; i < row; i++) {
+            for (int j = 0; j <= i; j++) {
+                System.out.print("* ");
+            }
+            System.out.println();
+        }
+    }
+    public static void ptrnLTStr(int row){
+        for (int i = 0; i < row; i++) {
+            for (int j = 0; j < row; j++) {
+                if (j >= row - (1 + i))
+                    System.out.print("* ");
+                else
+                    System.out.print("  ");
+            }
+            System.out.println();
+        }
+    }
+    public static void ptrnPyramidBtmUpStr(int row){
+        for (int i = 0; i < row; i++) {
+            for (int j = 0; j < row*2 - 1; j++) {
+                if ((row - (1 + i) <= j) && (j <= row - (1 - i)))
+                    System.out.print("* ");
+                else
+                    System.out.print("  ");
+            }
+            System.out.println();
+        }
+    }
+    public static void ptrnPyramidBtmUpAndUpDownStr(int row){
+        for (int i = 0; i < row; i++) {
+            for (int j = 0; j < row; j++) {
+                if (i <= row / 2) {
+                    if ((row / 2 - i <= j) && (j <= row / 2 + i))
+                        System.out.print("* ");
+                    else
+                        System.out.print("  ");
+                }
+                else {
+                    if ((i - row / 2 <= j) && (true )) // have to fix RB
+                        System.out.print("* ");
+                    else
+                        System.out.print("  ");
+                }
+            }
+            System.out.println();
+        }
+    }
+    public static void downWrdT(int row){
+        for (int i = 0; i < row; i++) {
+            for (int j = 0; j < row - i; j++) {
+                System.out.print("* ");
+            }
+            System.out.println();
+        }
+    }
+
 }
