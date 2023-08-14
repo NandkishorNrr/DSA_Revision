@@ -19,7 +19,7 @@ public class BasicPrograms {
 //        }
 //        System.out.println(isPalindrome("4554"));
 //        System.out.println(factorial(6));
-        int count = 1;
+      /*  int count = 1;
         for (int i = 1; i < 1000; i++) {
             if (isArmstrong(i)) {
                 System.out.print(i + ", ");
@@ -29,7 +29,8 @@ public class BasicPrograms {
                 System.out.println();
                 count = 1;
             }
-        }
+        }*/
+        printAllASCIIvalues();
     }
 
     //    Fibonacci series
@@ -105,5 +106,10 @@ public class BasicPrograms {
             temp /= 10;
         }
         return n == armsNum;
+    }
+    public static void printAllASCIIvalues(){
+        for (int i = 0; i <= 255; i++) {
+            System.out.println("ASCII value of " + (char)i + " is: " + i);
+        }
     }
 }

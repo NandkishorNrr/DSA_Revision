@@ -21,7 +21,8 @@ public class CodingQs {
 //        ptrnLTStr(5);
 //        ptrnPyramidBtmUpStr(10);
 //        ptrnPyramidBtmUpAndUpDownStr(5);
-        downWrdT(3);
+//        downWrdT(3);
+
     }
 //    1) convertCaseNprintInNewEachWord
     /*public String convertCaseNprintInNewEachWord(String s){
@@ -168,5 +169,4 @@ public class CodingQs {
             System.out.println();
         }
     }
-
 }

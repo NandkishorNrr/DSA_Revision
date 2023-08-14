@@ -5,7 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0bb3ffa7-95f4-4881-8d54-fd4061724731" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/Compare2Obj.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/BasicPrograms.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/BasicPrograms.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/CodingQs.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/CodingQs.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -17,6 +19,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Class" />
+        <option value="Interface" />
       </list>
     </option>
   </component>
@@ -41,7 +44,12 @@
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;
   }
 }</component>
-  <component name="RunManager" selected="Application.CodingQs">
+  <component name="RecentsManager">
+    <key name="ExtractSuperBase.RECENT_KEYS">
+      <recent name="" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.BasicPrograms">
     <configuration name="Array" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Array" />
       <module name="DSA_Revision" />
@@ -63,10 +71,18 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Compare2Obj" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Compare2Obj" />
+      <module name="DSA_Revision" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.CodingQs" />
         <item itemvalue="Application.BasicPrograms" />
+        <item itemvalue="Application.Compare2Obj" />
+        <item itemvalue="Application.CodingQs" />
         <item itemvalue="Application.Array" />
       </list>
     </recent_temporary>
