@@ -107,6 +107,67 @@ public class BasicPrograms {
         }
         return n == armsNum;
     }
+
+    public int randomNumGenerator(int min, int max){
+        return (int)(Math.random() * (max - min + 1) + min);
+    }
+    public static void ptrnRTStr(int row){
+        for (int i = 0; i < row; i++) {
+            for (int j = 0; j <= i; j++) {
+                System.out.print("* ");
+            }
+            System.out.println();
+        }
+    }
+    public static void ptrnLTStr(int row){
+        for (int i = 0; i < row; i++) {
+            for (int j = 0; j < row; j++) {
+                if (j >= row - (1 + i))
+                    System.out.print("* ");
+                else
+                    System.out.print("  ");
+            }
+            System.out.println();
+        }
+    }
+    public static void ptrnPyramidBtmUpStr(int row){
+        for (int i = 0; i < row; i++) {
+            for (int j = 0; j < row*2 - 1; j++) {
+                if ((row - (1 + i) <= j) && (j <= row - (1 - i)))
+                    System.out.print("* ");
+                else
+                    System.out.print("  ");
+            }
+            System.out.println();
+        }
+    }
+    public static void ptrnPyramidBtmUpAndUpDownStr(int row){
+        for (int i = 0; i < row; i++) {
+            for (int j = 0; j < row; j++) {
+                if (i <= row / 2) {
+                    if ((row / 2 - i <= j) && (j <= row / 2 + i))
+                        System.out.print("* ");
+                    else
+                        System.out.print("  ");
+                }
+                else {
+                    if ((i - row / 2 <= j) && (true )) // have to fix RB
+                        System.out.print("* ");
+                    else
+                        System.out.print("  ");
+                }
+            }
+            System.out.println();
+        }
+    }
+    public static void downWrdT(int row){
+        for (int i = 0; i < row; i++) {
+            for (int j = 0; j < row - i; j++) {
+                System.out.print("* ");
+            }
+            System.out.println();
+        }
+    }
     public static void printAllASCIIvalues(){
         for (int i = 0; i <= 255; i++) {
             System.out.println("ASCII value of " + (char)i + " is: " + i);
