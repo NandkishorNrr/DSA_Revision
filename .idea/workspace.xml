@@ -5,7 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0bb3ffa7-95f4-4881-8d54-fd4061724731" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/Sorting.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/NumberPrograms.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -47,14 +47,7 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Sorting">
-    <configuration name="Array" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Array" />
-      <module name="DSA_Revision" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="Application.NumberPrograms">
     <configuration name="BasicPrograms" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="BasicPrograms" />
       <module name="DSA_Revision" />
@@ -76,6 +69,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="NumberPrograms" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="NumberPrograms" />
+      <module name="DSA_Revision" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Sorting" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Sorting" />
       <module name="DSA_Revision" />
@@ -85,11 +85,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.NumberPrograms" />
         <item itemvalue="Application.Sorting" />
         <item itemvalue="Application.BasicPrograms" />
         <item itemvalue="Application.Compare2Obj" />
         <item itemvalue="Application.CodingQs" />
-        <item itemvalue="Application.Array" />
       </list>
     </recent_temporary>
   </component>
