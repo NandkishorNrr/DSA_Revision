@@ -5,9 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0bb3ffa7-95f4-4881-8d54-fd4061724731" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/Sorting.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/BasicPrograms.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/BasicPrograms.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/CodingQs.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/CodingQs.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -17,8 +16,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="Interface" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -48,7 +47,7 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.BasicPrograms">
+  <component name="RunManager" selected="Application.Sorting">
     <configuration name="Array" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Array" />
       <module name="DSA_Revision" />
@@ -77,8 +76,16 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Sorting" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Sorting" />
+      <module name="DSA_Revision" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Sorting" />
         <item itemvalue="Application.BasicPrograms" />
         <item itemvalue="Application.Compare2Obj" />
         <item itemvalue="Application.CodingQs" />
@@ -123,6 +130,11 @@
           <url>file://$PROJECT_DIR$/src/CodingQs.java</url>
           <line>14</line>
           <option name="timeStamp" value="8" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/Sorting.java</url>
+          <line>9</line>
+          <option name="timeStamp" value="10" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
