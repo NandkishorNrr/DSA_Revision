@@ -3,16 +3,28 @@ import java.util.Arrays;
 public class NumberPrograms {
     public static void main(String[] args) {
 //        System.out.println(reverseNum(12345));
+//        Peterson number
      /*   for (int i = 0; i < 500; i++) {
             if (isPeterson(i))
                 System.out.print(i + ", ");
         }*/
-//        pending
-        for (int i = 1; i < 100; i++) {
+//        Sunny number
+/*        for (int i = 1; i < 100; i++) {
 //            System.out.println(i + ": " + numberToWord(i));
             if (isSunnyNum(i))
                 System.out.println(i);
-        }
+        }*/
+
+//        Tech number
+       /* for (int i = 0; i < 10000; i++) {
+            if (isTechNumber(i))
+                System.out.println(i);
+        }*/
+//        System.out.println(isTechNumber(1312));
+/*        for (int i = 0; i < 100; i++) {
+            System.out.println("Sqrt: " + i + " - " + sqrtNearest(i));
+        }*/
+        System.out.println(GCD(3, 6));
     }
     public static int reverseNum(int n){
         int reversedNum = 0;
@@ -85,6 +97,44 @@ public class NumberPrograms {
 
         return (sqrt - Math.floor(sqrt)) == 0;
     }
+    public static boolean isTechNumber(int n){
+        var temp = n;
+        int digits = Integer.toString(n).length();
+
+        if (digits % 2 == 0){
+            int tenMulti = 1;
+            for (int i = 0; i < digits / 2; i++)
+                tenMulti *= 10;
+
+            var leftPart = temp / tenMulti;
+            var rightPart = temp % tenMulti;
+            var isTechNum = Math.pow((leftPart + rightPart), 2);
+            return isTechNum == n;
+        }
+        return false;
+    }
+//    pending...
+    public static int sqrtNearest(int n){
+        int sqrt;
+        int i = 0;
+
+        while (i*i <= n){
+            i++;
+        }
+      sqrt = i - 1;
+        return sqrt;
+    }
+    public static int GCD(int n1, int n2){
+        int GCD = 1;
+        int i = 1;
+        while (i <= n1 && i <= n2){
+            if ((n1 % i == 0 && n2 % i == 0))
+                GCD = i;
+            i++;
+        }
+        return GCD;
+    }
+
     private static int factorialOf(int n) {
         if (n == 0)
             return 1;
