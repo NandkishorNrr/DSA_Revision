@@ -24,7 +24,9 @@ public class NumberPrograms {
 /*        for (int i = 0; i < 100; i++) {
             System.out.println("Sqrt: " + i + " - " + sqrtNearest(i));
         }*/
-        System.out.println(GCD(3, 6));
+        for (int i = 0; i < 9999; i++)
+        System.out.println(i + ": " + numberToWord(i));
+//        System.out.println(GCD(3, 6));
     }
     public static int reverseNum(int n){
         int reversedNum = 0;
@@ -48,33 +50,42 @@ public class NumberPrograms {
 //string type array of power of tens
         String[] poweroftens = new String[] {"", "", "", "Hundred", "Thousand"};
 
-
-
         int digits = Integer.toString(n).length();
-        int[] arrDig = new int[digits + 1];
+        int[] nArr = new int[digits + 1];
         int temp = n;
-        for (int i = digits; i > 0; i--) {
-            arrDig[i] = temp % 10;
+        int i;
+        for (i = digits; i > 0; i--) {
+            nArr[i] = temp % 10;
             temp /= 10;
         }
-
-        for (int i = 1; i <= digits; i++) {
-            if (i < 3){
-                inWords = inWords + " " + onedigit[arrDig[i]] + " " + poweroftens[digits - (i - 1)];
-            } else if (i < 4 ) {
-                if (arrDig[i] == 0) {
-                    inWords += " and " + onedigit[arrDig[i + 1]];
-                    return inWords;
-                }
-                else if (arrDig[i] == 1){
-                    inWords += " " + " and " + twodigits[arrDig[i + 1] % 10];
-                    return inWords;
-                }
-                else
-                    inWords += " " + multipleoftens[arrDig[i]] + " " + onedigit[arrDig[i + 1]];
-            }
+        temp = n;
+        i = 1;
+        if (digits == 4) {
+            inWords = inWords + onedigit[nArr[i++]] + " " + poweroftens[digits--] + " ";
         }
-        System.out.println(Arrays.toString(arrDig));
+        if (digits == 3)
+//            have to fix....
+//            if (nArr[nArr.length - 3] == 0)
+//                inWords = inWords + " ";
+            inWords = inWords + onedigit[nArr[i++]] + " " + poweroftens[digits--] + " ";
+        if (digits == 2){
+            temp %= 100;
+//            System.out.println(temp);
+            if (temp % 100 == 0)
+                inWords = inWords;
+            else if (temp % 10 == 0)
+                inWords = inWords + multipleoftens[temp / 10];
+            else if (temp / 10 == 0)
+                inWords = inWords + "and " + onedigit[temp % 10];
+            else if (temp / 10 == 1)
+                inWords = inWords + twodigits[temp % 10];
+            else
+                inWords = inWords + multipleoftens[temp / 10] + " " + onedigit[temp % 10];
+        }
+        if (digits == 1)
+            inWords = inWords + onedigit[nArr[i++]];
+
+//        System.out.println(Arrays.toString(nArr));
         return inWords;
     }
     public static boolean isAutomorphic(int n){
