@@ -1,14 +1,18 @@
+import java.util.ArrayDeque;
 import java.util.Arrays;
+import java.util.Queue;
 
 public class Sorting {
     public static void main(String[] args) {
-        int [] arr = {4, 5, 6, 3, 1, 7, 2, 1};
+        int [] arr = {205, 448, 322, 109, 232};
         int[] sortedArr = new int[0];
 
 //        sortedArr = bubbleSort(arr);
 //        sortedArr = selectionSort(arr);
 //        sortedArr = insertionSort(arr);
-        sortedArr = mergeSort(arr);
+//        sortedArr = mergeSort(arr);
+//        sortedArr = countingSort(arr);
+        sortedArr = bucketSort(arr);
         System.out.println(Arrays.toString(sortedArr));
 
     }
@@ -63,6 +67,65 @@ public class Sorting {
         leftArr = mergeSort(leftArr);
         rightArr = mergeSort(rightArr);
         arr = merge(leftArr, rightArr, arr);
+        return arr;
+    }
+    public static int[] countingSort(int[] arr){
+        int max = -1;
+
+        for (int i = 1; i < arr.length; i++)
+            if (max < arr[i])
+                max = arr[i];
+
+//        System.out.println(max);
+
+        int[] indexArr = new int[max + 1];
+
+        for (int value : arr)
+            indexArr[value]++;
+
+//        System.out.println(Arrays.toString(indexArr));
+
+        int count = 0;
+        for (int i = 0; i <= max; i++)
+            if (indexArr[i] !=0)
+                while (indexArr[i] != 0) {
+                    arr[count++] = i;
+                    indexArr[i]--;
+                }
+        return arr;
+    }
+    public static int[] bucketSort(int[] arr){
+        if (arr.length == 0) {
+            int[] empty = new int[0];
+            return empty;
+        }
+
+        int max  = arr[0];
+        for (int i = 1; i < arr.length; i++)
+            if (max < arr[i])
+                max = arr[i];
+
+        int maxDigits = Integer.toString(max).length();
+
+        Queue<Integer>[] buckets = new Queue[10];
+        for (int i = 0; i < 10; i++)
+            buckets[i] = new ArrayDeque<>();
+
+        int mod = 1;
+        int div = 1;
+        for (int i = 0; i < maxDigits; i++) {
+            mod *= 10;
+            for (int j = 0; j < arr.length; j++) {
+                buckets[(arr[j] % mod) / div].add(arr[j]);
+            }
+            int insertIndex = 0;
+            for (int j = 0; j < 10; j++) {
+                while (!buckets[j].isEmpty())
+                    arr[insertIndex++] = buckets[j].remove();
+            }
+            div *= 10;
+        }
+
         return arr;
     }
     private static int[] merge(int[] leftArr, int[] rightArr, int[] arr){

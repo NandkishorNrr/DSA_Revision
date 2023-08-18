@@ -6,7 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="0bb3ffa7-95f4-4881-8d54-fd4061724731" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/NumberPrograms.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/NumberPrograms.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Sorting.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Sorting.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,7 +47,7 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.NumberPrograms">
+  <component name="RunManager" selected="Application.Sorting">
     <configuration name="BasicPrograms" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="BasicPrograms" />
       <module name="DSA_Revision" />
@@ -85,8 +85,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.NumberPrograms" />
         <item itemvalue="Application.Sorting" />
+        <item itemvalue="Application.NumberPrograms" />
         <item itemvalue="Application.BasicPrograms" />
         <item itemvalue="Application.Compare2Obj" />
         <item itemvalue="Application.CodingQs" />
@@ -138,7 +138,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/Sorting.java</url>
-          <line>10</line>
+          <line>12</line>
           <option name="timeStamp" value="16" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
