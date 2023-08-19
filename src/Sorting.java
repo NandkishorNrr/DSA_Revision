@@ -128,6 +128,7 @@ public class Sorting {
 
         return arr;
     }
+
     private static int[] merge(int[] leftArr, int[] rightArr, int[] arr){
         int i = 0;
         int j = 0;
