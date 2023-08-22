@@ -24,7 +24,7 @@ public class Tree {
         }
 
         @Override
-        public java.lang.String toString() {
+        public String toString() {
             return "value=" + value;
         }
     }

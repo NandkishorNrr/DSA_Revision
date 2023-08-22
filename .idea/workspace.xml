@@ -5,7 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0bb3ffa7-95f4-4881-8d54-fd4061724731" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/AVL_Tree.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Tree.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Tree.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,9 +49,9 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.StringManipulation">
-    <configuration name="BasicPrograms" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="BasicPrograms" />
+  <component name="RunManager" selected="Application.AVL_Tree">
+    <configuration name="AVL_Tree" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="AVL_Tree" />
       <module name="DSA_Revision" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -85,11 +87,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.AVL_Tree" />
         <item itemvalue="Application.StringManipulation" />
         <item itemvalue="Application.Searching" />
         <item itemvalue="Application.Sorting" />
         <item itemvalue="Application.NumberPrograms" />
-        <item itemvalue="Application.BasicPrograms" />
       </list>
     </recent_temporary>
   </component>
@@ -155,6 +157,11 @@
           <url>file://$PROJECT_DIR$/src/StringManipulation.java</url>
           <line>31</line>
           <option name="timeStamp" value="22" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/AVL_Tree.java</url>
+          <line>3</line>
+          <option name="timeStamp" value="24" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/src/NumberPrograms.java</url>
